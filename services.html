@@ -1,49 +1,75 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WanderLust</title>
+    <title>Home</title>
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-    <!-- font awesome cdn link  -->
+    <!-- font awesome cdn  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-        <link rel="stylesheet" href="css/style.css">
 
+    <!-- custom css file   -->
     <link rel="stylesheet" href="css/style.css">
 
+</head>
 
-    </head>
-    <body>
-        <header>
-            <div class="logo">
-                <img href="home.html" src="images/logo.png" width="150px" height="77px">
-            </div>
-            
-            
-            <a href="home.html" class="logo"><span>Wander</span>lust</a>      
-    
-            <nav class="navbar">
-                <a href="home.html">home</a>
-                <a href="book.html">book</a>
-                <a href="packages.html">packages</a>
-                <a href="services">services</a>
-                <a href="#contact">contact</a>
-            </nav>
-    
-            <div class="icons">
-                <i class="fas fa-search" id="search-btn"></i>
-                <i class="fas fa-user" id="login-btn"></i>
-            </div>
-    
-            <form action="" class="search-bar-container">
-                <input type="search" id="search-bar" placeholder="Kerko ketu ...">
-                <label for="search-bar" class="fas fa-search"></label>
-            </form>
-    
-            <div id="menu-bar" class="fas fa-bars"></div>
-</header>    
+
+<body>
+
+    <!--  header  -->
+    <header>
+        <div class="logo">
+            <img href="home.html" src="images/logo.png" width="150px" height="77px">
+        </div>
+        
+
+        <a href="#" class="logo"><span>Wander</span>lust</a>
+
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="book.html">book</a>
+            <a href="packages.html">packages</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Kerko ketu ...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+    </header>
+    <!--  header  -->
+
+    <!-- login container  -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forget password? <a href="#">Click here</a></p>
+            <p>Don't have and account? <a href="#">Register now</a></p>
+        </form>
+
+    </div>
+    <!-- login container  -->
         
 <section class="services" id="services">
     <h1 class="heading">
@@ -150,7 +176,7 @@
     <tr>
         <th align="center">Best Guidebooks</th>
         <th align="center"> Homestays </th>
-        <th align="center"> Top Hotels  </th>
+        <th align="center"> Top Hotels </th>
         <th align="center"> Places with the best food and drinks  </th>
     </tr>
     </thead>
@@ -193,15 +219,6 @@
     </tr>
 </table>
 </div>
-
-
-
-
-
-
-
-
-
 
 <div>
     <table class="rate-table">
@@ -251,5 +268,49 @@
     </table>
     </div>
     
+ <!-- footer -->
+ <section class="footer">
+
+    <div class="box-container">
+        <div class="logo">
+            <img href="home.html" src="images/logo.png" width="312px" height="192px">
+        </div>
+
+
+
+        <div class="box">
+
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est
+                accusantium voluptas enim nemo facilis sit debitis.</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html">home</a>
+            <a href="book.html">book</a>
+            <a href="packages.html">packages</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+
+    </div>
+
+
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!--  js file link  -->
+<script src="js/script.js"></script>
+
 </body>
 </html>
