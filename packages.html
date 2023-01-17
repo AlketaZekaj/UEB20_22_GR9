@@ -33,6 +33,7 @@
             box-shadow: 0 20px 25px rgba(0, 0, 0, .1);
             background-color: white;
             display: none;
+            transition: 1s;
         }
 
         .packages .box-container .box:nth-child(1),
@@ -93,11 +94,17 @@
             color: #ffffff;
             border-color: #3b6578;
             color: var(--gray);
+            transform: scale(1.1);
         }
 
         .packages .heading span {
             color: white;
-            background: #333;
+            background: #3b6578;
+        }
+
+        .box:hover {
+            transform: scale(1.1);
+            cursor: pointer;
         }
 
         #load-more {
@@ -129,9 +136,9 @@
         <div class="logo">
             <img href="home.html" src="images/logo.png" width="150px" height="77px">
         </div>
-        
-        
-        <a href="home.html" class="logo"><span>Wander</span>lust</a>      
+
+
+        <a href="home.html" class="logo"><span>Wander</span>lust</a>
 
         <nav class="navbar">
             <a href="home.html">home</a>
@@ -154,26 +161,26 @@
         <div id="menu-bar" class="fas fa-bars"></div>
 
     </header>
-     <!--  header  -->
+    <!--  header  -->
 
-     <!-- login container  -->
+    <!-- login container  -->
 
-<div class="login-form-container">
+    <div class="login-form-container">
 
-    <i class="fas fa-times" id="form-close"></i>
+        <i class="fas fa-times" id="form-close"></i>
 
-    <form action="">
-        <h3>login</h3>
-        <input type="email" class="box" placeholder="Enter your email">
-        <input type="password" class="box" placeholder="Enter your password">
-        <input type="submit" value="login now" class="btn">
-        <input type="checkbox" id="remember">
-        <label for="remember">Remember me</label>
-        <p>Forget password? <a href="#">Click here</a></p>
-        <p>Don't have and account? <a href="#">Register now</a></p>
-    </form>
-     <!-- login container  -->
-</div>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forget password? <a href="#">Click here</a></p>
+            <p>Don't have and account? <a href="#">Register now</a></p>
+        </form>
+        <!-- login container  -->
+    </div>
 
     <!-- packages section  -->
 
@@ -193,9 +200,111 @@
         <div class="box-container">
 
             <div class="box">
-                <img src="images/p-1.jpg" alt="">
+                <img src="images/paris.jpg" alt="paris">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> paris </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 100.00€ <span>140.00€</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/newZeland.jpg" alt="New Zeland">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> South Island, New Zealand </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> 135.00€ <span>$150.00</span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/maui.jpg" alt="maui">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> maui </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price"> 120.00€ <span>140.00€ </span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/london.jpeg" alt="london">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> london </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 95.00€ <span>115.00€ </span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/rome.jpg" alt="rome">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Rome </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 100.00€ <span>120.00€ </span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/tokyo.jpg" alt="tokyo">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 200.00€ <span>235.00€ </span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/maldives.jpg" alt="maldives">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Maldives </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -204,13 +313,81 @@
                         <i class="fas fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <div class="price"> 255.00€ <span>300.00€ </span> </div>
                     <a href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
-                <img src="images/p-2.jpg" alt="">
+                <img src="images/barcelona.jpg" alt="barcelona">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Barcelona </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 210.00€ <span>240.00€ </span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/newYork.jpg" alt="New York">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> new york </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 270.00€ <span>300.00€ </span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/sydney.jpg" alt="sydney">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> Sydney </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 290.00€ <span>310.00€ </span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/mumbai.jpg" alt="mumbai">
+                <div class="content">
+                    <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price"> 200.00€ <span>220.00€ </span> </div>
+                    <a href="book.html" class="btn">book now</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/hawaii.jpg" alt="hawaii">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> hawaii </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
@@ -219,17 +396,17 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <div class="price"> 250.00€ <span>290.00€ </span> </div>
                     <a href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
-                <img src="images/p-3.jpg" alt="">
+                <img src="images/egypt.jpeg" alt="egypt">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> sydney </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> egypt </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -238,49 +415,15 @@
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <div class="price"> 190.00€ <span>220.00€ </span> </div>
                     <a href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
-                <img src="images/p-4.jpg" alt="">
+                <img src="images/santorini.jpeg" alt="santorini">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> paris </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-5.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-6.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> eypt </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> santorini </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -289,15 +432,15 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <div class="price"> 200.00€ <span>230.00€ </span> </div>
                     <a href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
-                <img src="images/p-6.jpg" alt="">
+                <img src="images/amsterdam.jpeg" alt="amsterdam">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> eypt </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> amsterdam </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -306,15 +449,15 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <div class="price"> 150.00€ <span>190.00€ </span> </div>
                     <a href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
             <div class="box">
-                <img src="images/p-6.jpg" alt="">
+                <img src="images/dubai.jpeg" alt="dubai">
                 <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> eypt </h3>
+                    <h3> <i class="fas fa-map-marker-alt"></i> dubai </h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
@@ -323,143 +466,7 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-1.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-1.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-1.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-1.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-5.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-5.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-5.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
-                    <a href="book.html" class="btn">book now</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <img src="images/p-5.jpg" alt="">
-                <div class="content">
-                    <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <div class="price"> $90.00 <span>$120.00</span> </div>
+                    <div class="price"> 290.00€ <span>320.00€ </span> </div>
                     <a href="book.html" class="btn">book now</a>
                 </div>
             </div>
@@ -488,48 +495,50 @@
     </section>
 
 
- <!-- footer -->
- <section class="footer">
+    <!-- footer -->
+    <section class="footer">
 
-    <div class="box-container">
-        <div class="logo">
-            <img  href="home.html" src="images/logo.png" width="312px" height="192px">
+        <div class="box-container">
+            <div class="logo">
+                <img href="home.html" src="images/logo.png" width="312px" height="192px">
             </div>
-        
-    
-        
-        <div class="box">
-            
-            <h3>about us</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est accusantium voluptas enim nemo facilis sit debitis.</p>
+
+
+
+            <div class="box">
+
+                <h3>about us</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est
+                    accusantium voluptas enim nemo facilis sit debitis.</p>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html">home</a>
+                <a href="book.html">book</a>
+                <a href="packages.html">packages</a>
+                <a href="services.html">services</a>
+                <a href="contact.html">contact</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+
+
         </div>
-         
-        <div class="box">
-            <h3>quick links</h3>
-            <a href="home.html">home</a>
-            <a href="book.html">book</a>
-            <a href="packages.html">packages</a>
-            <a href="services.html">services</a>
-            <a href="contact.html">contact</a>
-        </div>
-        <div class="box">
-            <h3>follow us</h3>
-            <a href="#">facebook</a>
-            <a href="#">instagram</a>
-            <a href="#">twitter</a>
-            <a href="#">linkedin</a>
-        </div>
-        
-
-    </div>
 
 
-</section>
+    </section>
 
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-<!--  js file link  -->
-<script src="js/script.js"></script>
+    <!--  js file link  -->
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>

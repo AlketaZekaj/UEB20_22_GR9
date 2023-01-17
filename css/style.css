@@ -18,9 +18,9 @@
 }
 
 
-*::selection{
-  background:var(--gray);
-  color:#fff;
+*::selection {
+  background: var(--gray);
+  color: #fff;
 }
 
 html {
@@ -36,7 +36,7 @@ section {
 
 .heading {
   text-align: center;
-  padding: 2.5rem 0
+  padding: 35px 0
 }
 
 .heading span {
@@ -194,7 +194,7 @@ header .search-bar-container label:hover {
 }
 
 .login-form-container form .box:focus {
-  border-color: #008cffd2 ;
+  border-color: #008cffd2;
   ;
 }
 
@@ -211,9 +211,9 @@ header .search-bar-container label:hover {
   width: 100%;
 }
 
-.login-form-container form .btn:hover{
-  background:#3b6578;
-  color:#1A1A1A;
+.login-form-container form .btn:hover {
+  background: #3b6578;
+  color: #1A1A1A;
 }
 
 .login-form-container form p {
@@ -223,7 +223,7 @@ header .search-bar-container label:hover {
 }
 
 .login-form-container form p a {
-  color:#008cffd2;
+  color: #008cffd2;
 }
 
 .login-form-container form p a:hover {
@@ -350,66 +350,67 @@ header .search-bar-container label:hover {
   color: #666;
 }
 
-.book .row form .btn{
+.book .row form .btn {
   display: block;
-  width:100%;
-}
-.book .row form .btn:hover{
-  background:#3b6578;
-  color:#1A1A1A;
+  width: 100%;
 }
 
-.footer{
-  background:#3b6578;
+.book .row form .btn:hover {
+  background: #3b6578;
+  color: #1A1A1A;
 }
 
-.footer .box-container{
+.footer {
+  background: #3b6578;
+}
+
+.footer .box-container {
   display: flex;
   flex-wrap: wrap;
-  gap:1.5rem;
+  gap: 1.5rem;
 }
 
-.footer .box-container .box{
-  padding:1rem 0;
-  flex:1 1 25rem;
+.footer .box-container .box {
+  padding: 1rem 0;
+  flex: 1 1 25rem;
 }
 
-.footer .box-container .box h3{
+.footer .box-container .box h3 {
   font-size: 2.5rem;
-  padding:.7rem 0;
-  color:#fff;
+  padding: .7rem 0;
+  color: #fff;
 }
 
-.footer .box-container .box p{
+.footer .box-container .box p {
   font-size: 1.5rem;
-  padding:.7rem 0;
-  color:#eee;
+  padding: .7rem 0;
+  color: #eee;
 }
 
-.footer .box-container .box a{
+.footer .box-container .box a {
   display: block;
   font-size: 1.5rem;
-  padding:.7rem 0;
-  color:#eee;
+  padding: .7rem 0;
+  color: #eee;
 }
 
-.footer .box-container .box a:hover{
-  color:var(--gray);
+.footer .box-container .box a:hover {
+  color: var(--gray);
   text-decoration: underline;
 }
 
-.footer .credit{
+.footer .credit {
   text-align: center;
-  padding:2rem 1rem;
+  padding: 2rem 1rem;
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: normal;
-  color:#fff;
-  border-top: .1rem solid rgba(255,255,255,.2);
+  color: #fff;
+  border-top: .1rem solid rgba(255, 255, 255, .2);
 }
 
-.footer .credit span{
-  color:var(--gray);
+.footer .credit span {
+  color: var(--gray);
 }
 
 
@@ -420,67 +421,69 @@ header .search-bar-container label:hover {
 
 /* media queries  */
 
-@media (max-width:1200px){
+@media (max-width:1200px) {
 
-  html{
+  html {
     font-size: 60%;
   }
 
 }
 
-@media (max-width:991px){
+@media (max-width:991px) {
 
-  header{
-    padding:2rem;
+  header {
+    padding: 2rem;
   }
 
-  section{
-    padding:2rem;
+  section {
+    padding: 2rem;
   }
 
 }
 
-@media (max-width:768px){
+@media (max-width:768px) {
 
-  #menu-bar{
+  #menu-bar {
     display: initial;
   }
 
-  header .navbar{
+  header .navbar {
     position: absolute;
-    top:100%; right:0; left: 0;
+    top: 100%;
+    right: 0;
+    left: 0;
     background: #3b6578;
-    border-top: .1rem solid rgba(255,255,255,.2);
-    padding:1rem 2rem;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+    padding: 1rem 2rem;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
 
-  header .navbar.active{
+  header .navbar.active {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
   }
 
-  header .navbar a{
+  header .navbar a {
     display: block;
     border-radius: .5rem;
-    padding:1.5rem;
-    margin:1.5rem 0;    
-    background:#3b6578;
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    background: #3b6578;
   }
 
 }
 
-@media (max-width:450px){
+@media (max-width:450px) {
 
-  html{
+  html {
     font-size: 50%;
   }
 
-  .heading span{
+  .heading span {
     font-size: 2.5rem;
   }
 
-  .contact .row form .inputBox input{
-    width:100%;
+  .contact .row form .inputBox input {
+    width: 100%;
   }
 
 }
