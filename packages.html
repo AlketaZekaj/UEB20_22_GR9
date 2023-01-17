@@ -14,99 +14,13 @@
     <!-- custom css file   -->
     <link rel="stylesheet" href="css/style.css">
 
+    <script>
+        function btnMouseEnterEvent() {
+            console.warn("We're directing you to the booking page!");
+        }
+    </script>
+
     <style>
-        .packages {
-            padding: 120px;
-            /*background-color: #666;*/
-        }
-
-        .packages .box-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        .packages .box-container .box {
-            flex: 1 1 30rem;
-            border-radius: 9px;
-            overflow: hidden;
-            box-shadow: 0 20px 25px rgba(0, 0, 0, .1);
-            background-color: white;
-            display: none;
-            transition: 1s;
-        }
-
-        .packages .box-container .box:nth-child(1),
-        .packages .box-container .box:nth-child(2),
-        .packages .box-container .box:nth-child(3),
-        .packages .box-container .box:nth-child(4),
-        .packages .box-container .box:nth-child(5),
-        .packages .box-container .box:nth-child(6),
-        .packages .box-container .box:nth-child(7),
-        .packages .box-container .box:nth-child(8) {
-            display: inline-block;
-        }
-
-        .packages .box-container .box img {
-            height: 25rem;
-            width: 100%;
-            object-fit: cover;
-        }
-
-        .packages .box-container .box .content {
-            padding: 2rem;
-        }
-
-        .packages .box-container .box .content h3 {
-            font-size: 2rem;
-            color: #333;
-        }
-
-        .packages .box-container .box .content h3 i {
-            color: var(--gray);
-        }
-
-        .packages .box-container .box .content p {
-            font-size: 1.7rem;
-            color: #666;
-            padding: 1rem 0;
-        }
-
-        .packages .box-container .box .content .stars i {
-            font-size: 1.7rem;
-            color: #F4D800;
-        }
-
-        .packages .box-container .box .content .price {
-            font-size: 2rem;
-            color: #333;
-            padding-top: 1rem;
-        }
-
-        .packages .box-container .box .content .price span {
-            color: #666;
-            font-size: 1.5rem;
-            text-decoration: line-through;
-        }
-
-        .packages .btn:hover {
-            background: #3b6578;
-            color: #ffffff;
-            border-color: #3b6578;
-            color: var(--gray);
-            transform: scale(1.1);
-        }
-
-        .packages .heading span {
-            color: white;
-            background: #3b6578;
-        }
-
-        .packages .box-container .box:hover {
-            transform: scale(1.1);
-            cursor: pointer;
-        }
-
         #load-more {
             display: inline-block;
             margin-top: 20px;
@@ -171,8 +85,8 @@
 
         <form action="">
             <h3>login</h3>
-            <input type="email" class="box" placeholder="Enter your email">
-            <input type="password" class="box" placeholder="Enter your password">
+            <input type="email" class="box" placeholder="Enter your email" required>
+            <input type="password" class="box" placeholder="Enter your password" required>
             <input type="submit" value="login now" class="btn">
             <input type="checkbox" id="remember">
             <label for="remember">Remember me</label>
@@ -187,13 +101,13 @@
     <section class="packages" id="packages">
 
         <h1 class="heading">
-            <span>p</span>
+            <span style="color: #333;">p</span>
             <span>a</span>
-            <span>c</span>
+            <span style="color: #333;">c</span>
             <span>k</span>
-            <span>a</span>
+            <span style="color: #333;">a</span>
             <span>g</span>
-            <span>e</span>
+            <span style="color: #333;">e</span>
             <span>s</span>
         </h1>
 
@@ -203,7 +117,7 @@
                 <img src="images/paris.jpg" alt="paris">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> paris </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -211,8 +125,8 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> 100.00€ <span>140.00€</span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> <b>100.00€</b> <span>140.00€</span> </div>
+                    <a id="button" href="book.html" class="btn" onmouseenter="btnMouseEnterEvent()">book now</a>
                 </div>
             </div>
 
@@ -220,7 +134,7 @@
                 <img src="images/newZeland.jpg" alt="New Zeland">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> South Island, New Zealand </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -228,8 +142,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <div class="price"> 135.00€ <span>$150.00</span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"><b>135.00€</b> <span>$150.00</span> </div>
+                    <a id="button" href="book.html" class="btn" onmouseenter="btnMouseEnterEvent()">book now</a>
                 </div>
             </div>
 
@@ -237,7 +151,7 @@
                 <img src="images/maui.jpg" alt="maui">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> maui </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -245,8 +159,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <div class="price"> 120.00€ <span>140.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> <b>120.00€</b> <span>140.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn" onmouseenter="btnMouseEnterEvent()">book now</a>
                 </div>
             </div>
 
@@ -254,7 +168,7 @@
                 <img src="images/london.jpeg" alt="london">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> london </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -262,8 +176,8 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> 95.00€ <span>115.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> <b>105.00€</b> <span>125.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn" onmouseenter="btnMouseEnterEvent()">book now</a>
                 </div>
             </div>
 
@@ -271,7 +185,7 @@
                 <img src="images/rome.jpg" alt="rome">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> Rome </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -279,8 +193,8 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> 100.00€ <span>120.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> <b>100.00€</b> <span>120.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
@@ -288,7 +202,7 @@
                 <img src="images/tokyo.jpg" alt="tokyo">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> tokyo </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -296,8 +210,8 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> 200.00€ <span>235.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"><b> 200.00€ </b><span>235.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
@@ -305,7 +219,7 @@
                 <img src="images/maldives.jpg" alt="maldives">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> Maldives </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -313,8 +227,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fa fa-star"></i>
                     </div>
-                    <div class="price"> 255.00€ <span>300.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> <b>255.00€</b> <span>300.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
@@ -322,7 +236,7 @@
                 <img src="images/barcelona.jpg" alt="barcelona">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> Barcelona </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -330,8 +244,8 @@
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> 210.00€ <span>240.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> <b>210.00€</b> <span>240.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
@@ -339,7 +253,7 @@
                 <img src="images/newYork.jpg" alt="New York">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> new york </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -347,8 +261,8 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> 270.00€ <span>300.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"><b> 270.00€ </b><span>300.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
@@ -356,7 +270,7 @@
                 <img src="images/sydney.jpg" alt="sydney">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> Sydney </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -364,8 +278,8 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> 290.00€ <span>310.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"><b> 290.00€ </b><span>310.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
@@ -373,7 +287,7 @@
                 <img src="images/mumbai.jpg" alt="mumbai">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> mumbai </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -381,8 +295,8 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> 200.00€ <span>220.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> <b>200.00€</b> <span>220.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
@@ -390,7 +304,7 @@
                 <img src="images/hawaii.jpg" alt="hawaii">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> hawaii </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -398,8 +312,8 @@
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                     </div>
-                    <div class="price"> 250.00€ <span>290.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"><b> 250.00€ </b><span>290.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
@@ -407,7 +321,7 @@
                 <img src="images/egypt.jpeg" alt="egypt">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> egypt </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -415,8 +329,8 @@
                         <i class="far fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> 190.00€ <span>220.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"><b>190.00€</b> <span>220.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
@@ -424,7 +338,7 @@
                 <img src="images/santorini.jpeg" alt="santorini">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> santorini </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -432,8 +346,8 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> 200.00€ <span>230.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> <b>200.00€</b> <span>230.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
@@ -441,7 +355,7 @@
                 <img src="images/amsterdam.jpeg" alt="amsterdam">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> amsterdam </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -449,8 +363,8 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> 150.00€ <span>190.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> <b>150.00€ </b><span>190.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
@@ -458,7 +372,7 @@
                 <img src="images/dubai.jpeg" alt="dubai">
                 <div class="content">
                     <h3> <i class="fas fa-map-marker-alt"></i> dubai </h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</p>
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!</i></p>
                     <div class="stars">
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
@@ -466,8 +380,8 @@
                         <i class="fas fa-star"></i>
                         <i class="far fa-star"></i>
                     </div>
-                    <div class="price"> 290.00€ <span>320.00€ </span> </div>
-                    <a href="book.html" class="btn">book now</a>
+                    <div class="price"> <b>290.00€</b> <span>320.00€ </span> </div>
+                    <a id="button" href="book.html" class="btn">book now</a>
                 </div>
             </div>
 
@@ -475,24 +389,25 @@
 
         </div>
 
-        <script>
-            let loadMoreBtn = document.querySelector('#load-more');
-            let currentItem = 8;
-
-            loadMoreBtn.onclick = () => {
-                let boxes = [...document.querySelectorAll('.packages .box-container .box')];
-                for (var i = currentItem; i < currentItem + 8; i++) {
-                    boxes[i].style.display = 'inline-block';
-                }
-                currentItem += 8;
-
-                if (currentItem >= boxes.length) {
-                    loadMoreBtn.style.display = 'none';
-                }
-            }
-        </script>
 
     </section>
+
+    <script>
+        let loadMoreBtn = document.querySelector('#load-more');
+        let currentItem = 8;
+
+        loadMoreBtn.onclick = () => {
+            let boxes = [...document.querySelectorAll('.packages .box-container .box')];
+            for (var i = currentItem; i < currentItem + 8; i++) {
+                boxes[i].style.display = 'inline-block';
+            }
+            currentItem += 8;
+
+            if (currentItem >= boxes.length) {
+                loadMoreBtn.style.display = 'none';
+            }
+        }
+    </script>
 
 
     <!-- footer -->

@@ -413,7 +413,96 @@ header .search-bar-container label:hover {
   color: var(--gray);
 }
 
+.packages {
+  padding: 120px;
+}
 
+.packages .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.packages .box-container .box {
+  flex: 1 1 30rem;
+  border-radius: 9px;
+  overflow: hidden;
+  box-shadow: 0 20px 25px rgba(0, 0, 0, .1);
+  background-color: white;
+  display: none;
+  transition: 1s;
+}
+
+.packages .box-container .box:nth-child(1),
+.packages .box-container .box:nth-child(2),
+.packages .box-container .box:nth-child(3),
+.packages .box-container .box:nth-child(4),
+.packages .box-container .box:nth-child(5),
+.packages .box-container .box:nth-child(6),
+.packages .box-container .box:nth-child(7),
+.packages .box-container .box:nth-child(8) {
+  display: inline-block;
+}
+
+.packages .box-container .box img {
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.packages .box-container .box .content {
+  padding: 2rem;
+}
+
+.packages .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #333;
+}
+
+.packages .box-container .box .content h3 i {
+  color: var(--gray);
+}
+
+.packages .box-container .box .content p {
+  font-size: 1.7rem;
+  color: #666;
+  padding: 1rem 0;
+}
+
+.packages .box-container .box .content .stars i {
+  font-size: 1.7rem;
+  color: #F4D800;
+}
+
+.packages .box-container .box .content .price {
+  font-size: 2rem;
+  color: #333;
+  padding-top: 1rem;
+}
+
+.packages .box-container .box .content .price span {
+  color: #666;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.packages .btn:hover {
+  background: #3b6578;
+  color: #ffffff;
+  border-color: #3b6578;
+  color: var(--gray);
+  transform: scale(1.1);
+}
+
+.packages .heading span {
+  color: white;
+  background: #3b6578;
+}
+
+.packages .box-container .box:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
 
 
