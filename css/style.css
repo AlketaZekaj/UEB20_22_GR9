@@ -507,7 +507,136 @@ header .search-bar-container label:hover {
   cursor: pointer;
 }
 
+/*services*/
+.services {
+  padding: 120px;
+}
 
+.services .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.services .box-container .box{
+  flex: 1 1 30rem;
+  border-radius: .5rem;
+  padding:1rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 120px;
+}
+
+.services .box-container .box i{
+  padding:1rem;
+  font-size: 4rem;
+  color:#3b6578;
+}
+
+.services .box-container .box h3{
+  font-size: 2rem;
+  color:rgb(0, 12, 3);
+}
+
+.services .box-container .box p{
+  font-size: 1.5rem;
+  color:rgb(9, 10, 9);
+  padding:1rem 0;
+}
+
+.services .box-container .box:hover{
+  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+}
+
+.content-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  margin-bottom: 2%;
+  font-size: 0.9em;
+  min-width: 100%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-top: 5.5rem;
+
+}
+
+.content-table thead tr {
+  background-color: #3b6578;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  border-style:groove;
+}
+
+.content-table th,
+.content-table td {
+  padding: 11px 16px;
+}
+
+.content-table tbody tr {
+  border-bottom: 3px solid #dddddd;
+  text-align: center;
+}
+
+.content-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.content-table tbody tr:last-of-type {
+  border-bottom: 3px solid#3b6578;
+}
+
+.content-table tbody tr.active-row {
+  font-weight: bold;
+  color: #3b6578
+  ;
+}
+
+
+
+.rate-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  margin-bottom: 2%;
+  font-size: 0.9em;
+  min-width: 30%;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+.rate-table thead tr {
+  background-color: gray;
+  color: #ffffff;
+  text-align: left;
+  font-weight: bold;
+  border-style: double;
+  animation-name:colored;
+  animation-duration: 25s;
+}
+@keyframes colored{
+  0% {background-color:#3b6578;}
+  25% {background-color:rgb(47, 155, 206);}
+  50% {background-color: rgb(112, 202, 230);}
+  75% {background-color:rgb(85, 43, 14)};
+  100% {background-color: gray;}
+}
+.rate-table th,
+.rate-table td {
+  padding: 12px 15px;
+}
+.rate-table tbody tr.active-row {
+  font-weight: bold;
+  color:#3b6578;
+}
+.rate-table li {
+  float: inline-start;
+}
+.rate-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+  border-radius: 10px;
+}
+/*services*/
 
 
 
