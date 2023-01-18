@@ -65,3 +65,34 @@ var swiper = new Swiper(".review-slider", {
 function btnMouseEnterEvent() {
     console.warn("We're directing you to the booking page!");
 }
+
+
+function message(){
+  var Name = document.getElementById('name');
+  var Email = document.getElementById('email');
+  var PhoneNumber=document.getElementById('phoneNumber');
+  var Message = document.getElementById('message');
+  const success = document.getElementById('success');
+  const danger = document.getElementById('danger');
+
+  if(Name.value === '' || Email.value === '' || Message.value === '' || PhoneNumber.value === ''){
+      danger.style.display = 'block';
+  }
+  else {
+  setTimeout(() => {
+      Name.value = '';
+      Email.value = '';
+      Message.value = '';
+      PhoneNumber.value = '';
+  }, 2000);
+
+  success.style.display = 'block';
+}
+
+
+setTimeout(() => {
+  danger.style.display = 'none';
+  success.style.display = 'none';
+}, 4000);
+
+}
