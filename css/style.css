@@ -309,6 +309,8 @@ header .search-bar-container label:hover {
   background: var(--gray);
 }
 
+
+
 .book .row {
   display: flex;
   flex-wrap: wrap;
