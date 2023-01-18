@@ -309,7 +309,14 @@ header .search-bar-container label:hover {
   background: var(--gray);
 }
 
+.book {
+  padding: 120px;
+}
 
+.book .heading span {
+  color: white;
+  background: #3b6578;
+}
 
 .book .row {
   display: flex;
@@ -520,34 +527,34 @@ header .search-bar-container label:hover {
   gap: 2rem;
 }
 
-.services .box-container .box{
+.services .box-container .box {
   flex: 1 1 30rem;
   border-radius: .5rem;
-  padding:1rem;
+  padding: 1rem;
   text-align: center;
   cursor: pointer;
   border-radius: 120px;
 }
 
-.services .box-container .box i{
-  padding:1rem;
+.services .box-container .box i {
+  padding: 1rem;
   font-size: 4rem;
-  color:#3b6578;
+  color: #3b6578;
 }
 
-.services .box-container .box h3{
+.services .box-container .box h3 {
   font-size: 2rem;
-  color:rgb(0, 12, 3);
+  color: rgb(0, 12, 3);
 }
 
-.services .box-container .box p{
+.services .box-container .box p {
   font-size: 1.5rem;
-  color:rgb(9, 10, 9);
-  padding:1rem 0;
+  color: rgb(9, 10, 9);
+  padding: 1rem 0;
 }
 
-.services .box-container .box:hover{
-  box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+.services .box-container .box:hover {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
 }
 
 .content-table {
@@ -568,7 +575,7 @@ header .search-bar-container label:hover {
   color: #ffffff;
   text-align: left;
   font-weight: bold;
-  border-style:groove;
+  border-style: groove;
 }
 
 .content-table th,
@@ -591,8 +598,7 @@ header .search-bar-container label:hover {
 
 .content-table tbody tr.active-row {
   font-weight: bold;
-  color: #3b6578
-  ;
+  color: #3b6578;
 }
 
 
@@ -607,37 +613,60 @@ header .search-bar-container label:hover {
   overflow: hidden;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
+
 .rate-table thead tr {
   background-color: gray;
   color: #ffffff;
   text-align: left;
   font-weight: bold;
   border-style: double;
-  animation-name:colored;
+  animation-name: colored;
   animation-duration: 25s;
 }
-@keyframes colored{
-  0% {background-color:#3b6578;}
-  25% {background-color:rgb(47, 155, 206);}
-  50% {background-color: rgb(112, 202, 230);}
-  75% {background-color:rgb(85, 43, 14)};
-  100% {background-color: gray;}
+
+@keyframes colored {
+  0% {
+    background-color: #3b6578;
+  }
+
+  25% {
+    background-color: rgb(47, 155, 206);
+  }
+
+  50% {
+    background-color: rgb(112, 202, 230);
+  }
+
+  75% {
+    background-color: rgb(85, 43, 14)
+  }
+
+  ;
+
+  100% {
+    background-color: gray;
+  }
 }
+
 .rate-table th,
 .rate-table td {
   padding: 12px 15px;
 }
+
 .rate-table tbody tr.active-row {
   font-weight: bold;
-  color:#3b6578;
+  color: #3b6578;
 }
+
 .rate-table li {
   float: inline-start;
 }
+
 .rate-table tbody tr {
   border-bottom: 1px solid #dddddd;
   border-radius: 10px;
 }
+
 .dropbtn {
   background-color: #0d0247;
   color: white;
@@ -647,6 +676,7 @@ header .search-bar-container label:hover {
   cursor: pointer;
   border-radius: 5px;
 }
+
 /*services*/
 
 
