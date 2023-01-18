@@ -41,9 +41,10 @@ section {
 
 .heading span {
   font-size: 3.5rem;
-  background: white;
   border-radius: .5rem;
   padding: .2rem 1rem;
+  color: white;
+  background: #3b6578;
 }
 
 .heading span.space {
@@ -313,11 +314,6 @@ header .search-bar-container label:hover {
   padding: 120px;
 }
 
-.book .heading span {
-  color: white;
-  background: #3b6578;
-}
-
 .book .row {
   display: flex;
   flex-wrap: wrap;
@@ -504,11 +500,6 @@ header .search-bar-container label:hover {
   border-color: #3b6578;
   color: var(--gray);
   transform: scale(1.1);
-}
-
-.packages .heading span {
-  color: white;
-  background: #3b6578;
 }
 
 .packages .box-container .box:hover {
