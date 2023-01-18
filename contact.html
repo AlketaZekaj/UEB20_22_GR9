@@ -26,7 +26,7 @@
         </div>
         
 
-        <a href="home.html" class="logo"><span>Wander</span>lust</a>
+        <a href="#" class="logo"><span>Wander</span>lust</a>
 
         <nav class="navbar">
             <a href="home.html">home</a>
@@ -34,7 +34,6 @@
             <a href="packages.html">packages</a>
             <a href="services.html">services</a>
             <a href="contact.html">contact</a>
-            <a href="aboutus.html">about us</a>
         </nav>
 
         <div class="icons">
@@ -66,26 +65,46 @@
             <input type="checkbox" id="remember">
             <label for="remember">Remember me</label>
             <p>Forget password? <a href="#">Click here</a></p>
-            <p>Don't have and account? <a href="register.html">Register now</a></p>
+            <p>Don't have and account? <a href="#">Register now</a></p>
         </form>
 
     </div>
-    <!-- login container  -->
-
-        <div class="container">
-            <div class="contact-box">
-                <div class="left">
-                    <div class="right">
-                        <h2>Contact Us</h2>
-                        <input type="text" class="field" placeholder="Name and Surname">
-                        <input type="email" class="field" placeholder="Email">
-                        <input type="text" class="field" placeholder="Phone Number">
-                        <textarea class="field area" placeholder="Message"></textarea>
-                        <button class="btn">Submit</button>
-                    </div>
+    <!-- login containerrr  -->
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>Contact Us</title>
+            <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+            <link rel="stylesheet" href="css/style.css">
+            <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+        </head>
+        <body>
+            <div class="container">
+                <div class="contact-box">
+                    <div class="left"></div>
+                        <div class="right">
+                            <h2>Contact Us</h2>
+                           
+                            <input type="text" class="field" id="name" placeholder="Name">
+                            <input type="email" class="field" id="email" placeholder="Email">
+                            <input type="text" class="field" id="phoneNumber" placeholder="Phone Number">
+                            <textarea class="field area" id="message" placeholder="Message"></textarea>
+                            
+                            <div class="button">
+                                <button id="Submit" onclick="message()">Submit</button>
+                            </div>
+                            <div class="message">
+                                <div class="success" id="success">Your Message Successfully Sent!</div>
+                                <div class="danger" id="danger">Fields Can't be Empty!</div>
+                            </div>
+                        </div>
                 </div>
             </div>
-        </div>
+    
+            <script src="main.js"></script>
+
+        </body>
+    </html>
         <!-- footer -->
 <section class="footer">
 
@@ -109,7 +128,6 @@
             <a href="packages.html">packages</a>
             <a href="services.html">services</a>
             <a href="contact.html">contact</a>
-            <a href="aboutus.html">about us</a>
         </div>
         <div class="box">
             <h3>follow us</h3>
