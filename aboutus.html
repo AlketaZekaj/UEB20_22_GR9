@@ -1,196 +1,280 @@
- * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-  }
-  body {
-      background-color: hsl(266, 64%, 96%);
-      padding-top: 100px;
-  }
-  
-  h1 {
-      margin-bottom: 8px;
-  }
-  .content p {
-      margin-bottom: 45px;
-  }
-  
-  h1 {
-      color: #100020;
-      font-size: 45px;
-  }
-  .aboutus .heading span {
-    color: white;
-    background: #3b6578;
-}
+<!DOCTYPE html>
+<html lang="en">
 
-  
-  button {
-      background: #3b6578;
-      width: 100px;
-      border: none;
-      outline: none;
-      color : #fff;
-      height: 35px;
-      border-radius: 30px;
-      margin-top: 20px;
-      box-shadow: 0px 5px 15px 0px rgba(14, 2, 66, 0.3);
-      text-align: center;
-      margin-left: 40%;
-  }
-  
-  button:hover {
-      color : #100020;
-  }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
 
-  .nav_linqet {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav_linqet a {
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    color: #edf0f1;
-    text-decoration: none;
-  }
-  
-  
-  
-  @keyframes bottomboder {
-    0%   {border-bottom:2px solid black;}
-    25%  {border-bottom:2px solid #3b6578;}
-    100% {border-bottom:2px solid black;}
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file   -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/aboutusstyle.css">
+    <script src="https://use.fontawesome.com/0c9865e994.js"></script>
+    <script src="drag.drop.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="showhide.js"></script>
+    <script src="fade.js"></script>
+</head>
+
+</head>
+
+
+<body>
+
+    <!--  header  -->
+    <header>
+
+        <div class="logo">
+            <img href="home.html" src="images/logo.png" width="150px" height="77px">
+        </div>
+
+
+        <a href="home.html" class="logo"><span>Wander</span>lust</a>
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="book.html">book</a>
+            <a href="packages.html">packages</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+            <a href="aboutus.html">about us</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Kerko ketu ...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+    </header>
+    <!--  header  -->
+
+    <!-- login container  -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="Enter your email" required>
+            <input type="password" class="box" placeholder="Enter your password" required>
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forget password? <a href="#">Click here</a></p>
+            <p>Don't have and account? <a href="register.html">Register now</a></p>
+        </form>
+
+    </div>
+    <!-- login container  -->
+<body>
+
+
     
-  }
-  
-  
-  .content{
-      padding-top: 40px;
-      padding-bottom: 40px;
-      margin-left: 10px;
-      padding-left: 50px;
-      width: 50%;
-      margin-right: auto;
-      line-height: 30pt;
-  
-  }
-  p {
-      font-family: "freight-text-pro",serif;
-  }
-  abbr{
-      text-decoration: underline;
-  }
-  mark{
-      background-color: #4d82e4;
-  }
 
-  #servicesList{
-      margin-left: 45px;
-  }
-  ul{
-      margin-left: 22px;
-      list-style-type: square;
-  }
-  dl dd{
-      margin-left: 30px;
-      font-style: italic;
-  }
-  #dl{
-      border-style:double;
-      border-color: #4d82e4;
-      margin-right: 20px;
-      animation: animacioniBackground 3s;
-      animation-play-state: running;
-      animation-iteration-count: 10;
-  }
-  #dl{
-    border-style:double;
-    border-color: #0c0eb3;
-    margin-right: 20px;
-    animation: animacioniBackground 3s;
-    animation-play-state: running;
-    animation-iteration-count: 10;
-}
 
-@keyframes animacioniBackground {
-  0%   {background-image: url(https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg);}
-  25%  {background-image: url(https://thumbs.dreamstime.com/z/great-wall-china-travel-stormy-sky-clouds-dramatic-scene-near-beijing-create-dramatic-scenic-backdrop-36567269.jpg);}
-  50%  {background-image: url(https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg);}
-  75%  {background-image: url(https://thumbs.dreamstime.com/z/great-wall-china-travel-stormy-sky-clouds-dramatic-scene-near-beijing-create-dramatic-scenic-backdrop-36567269.jpg);}
-  100% {background-image: url(https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg);}
-}
 
-  
-  dt{
-      font-weight: 640;
-  }
-  p span{
-      background-color: #4d82e4;
-      font-size: 20px;
-      outline-style: solid;
-      outline-color: #100020;
-      outline-width: 1px;
-      outline-offset: 0px;
-      background-image:linear-gradient(#3b6578);
-  }
-  
-  .about{
-    display: flex;
-    width: 110%;
-    height: auto;
-    margin-bottom: 50px;
-  }
-  
-  .imgtd{
-    width: auto;
-    height: 650px;
-    margin-left: 20px;
-  }
-  
-  #fototd{
-    width: 20%;
-  }
-  
-  td{
-    padding-right: 50px;
-    padding-left: 0px;
-  }
-  
-  #data2{
-    padding-left: 50px;
-    margin-left: 10px;
-    line-height: 25pt;
-    margin-bottom: 50px;
-  }
-  
-  #data1{
-    padding-left: 50px;
-    margin-left: 10px;
-    padding-bottom: 20px;
-    line-height: 25pt;
-    
-  }
-  
-  table{
-    border: blanchedalmond;
-    border-style:ridge;
-    border-color:blanchedalmond ;
-  }
-  
-  
-  #div1 {
-    width : 360px;
-    height : 305px;
-    padding: 10px;
-    border: 1px solid #aaaaaa;
-  }
-  #audiojquery{
-    margin-top: 150px;
-    margin-bottom: 50px;
-  }
-  
-  .wseconds {
-    display: flex;
+    <section>
+        <table class="about">
+            <tr>
+                <td rowspan="3" id="fototd">
+                    <img class="imgtd" src="https://claritybusinesstravel.com/wp-content/uploads/2022/03/hero_banner3.png">
+                    <figcaption style="margin-left: 19px; text-align: center;"><b>We are Wanderlust</b></figcaption>
+                    <canvas></canvas>
+                </td>
+                <td class="content">
+                    <article>
+                        <p class="paragraph" id="content">Wanderlust is a traveling website that was launched
+                            on May 31,
+                            2019 by four students of FIEK  in <abbr title="KOSOV&Euml;">KS</abbr>,.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam! <mark><a
+                                    id="magazine" >We were chosen as best website of 2019</a></mark>.<br>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!
+                            In  <abbr title="KOSOV&Euml;">KS</abbr>,
+                            WANDERLUST is on of the most famous sites </p>
+                        <p style="font-weight: bold;">Counted seconds: <output id="result"></output> </p>
+                        <div class="wseconds">
+                            <button id="start" style="margin-left: 20%; width: 150px;" onclick="countSeconds()">Count
+                                Seconds</button>
+                            <button id="stop" style="margin-left: 100px; width: 150px;" onclick="stopSeconds()">Stop seconds</button>
+                        </div>
+                        <script>
+                            var s;
 
-  }
+                            function countSeconds() {
+                                if (typeof (Worker) !== "undefined") {
+                                    if (typeof (s) == "undefined") {
+                                        s = new Worker("seconds.js");
+                                    }
+                                    s.onmessage = function (event) {
+                                        document.getElementById("result").innerHTML = event.data;
+                                    };
+                                } else {
+                                    document.getElementById("result").innerHTML = "Sorry, your browser does not support wseconds...";
+                                }
+                            }
+
+                            function stopSeconds() {
+                                s.terminate();
+                                s = undefined;
+                            }
+                        </script>
+
+                    </article>
+                </td>
+            </tr>
+            <tr>
+                <td id="data1">
+                    <button id="buttonfade" style="width: 300px; margin-left: 27%; margin-top: 0%;">Fade</button>
+                    <div id="fade">
+                        <p>What we do:</p>
+                        <div id="servicesList">
+                            <ol>
+                                <li>We offer you the best travel with:
+                                    <ul>
+                                        <li>airplane</li>
+                                        <li> buses</li>
+                                        <li> train</li>
+                                    </ul>
+                                </li>
+                                <li> We make sure you have unforgettable adventures<br></li>
+                            </ol>
+                            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                            <script>
+                                $(document).ready(function append() {
+
+                                    $("#append").click(function append() {
+                                        $("ol").append("<li><b>Appended item</b></li>");
+                                        alert("An item was appended");
+                                    });
+                                });
+                                $(document).ready(function hideAppend() {
+                                    $("li").click(function hideAppend() {
+                                        $(this).hide();
+                                    });
+                                });
+                            </script>
+
+                            <button id="append">Append item</button>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+           
+        </table>
+
+        <tr>
+            <td id="data2">
+                <p><span title="Some word from our clients">People say</span></p>
+                <a href="https://metro.co.uk/wp-content/uploads/2022/04/Alex-Cooper-3e3f-bbf1.jpg?quality=90&strip=all" target="_blank">
+                    <dl id="dl">
+                        <dt>Johnny</dt>
+                        <dd>~For me it was the first time that i booked vacations online and i am very happy,thanks to Wanderlust and their amaizing team .</dd>
+                    </dl>
+                </a>
+            </td>
+        </tr>
+    </section>
+
+    <div id="audiojquery">
+        <audio controls id="music"
+            style="background-color: hsl(266, 64%, 96%); margin:auto; display: block; margin-top: 20px;">
+            <h4 >Je lodhur duke kerkuar ofertat me te mira? Relaksohu me muzike!</h4>
+            <source src="media/MC Kresha - Era.mp3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+        <button id="hide" style="margin-left: 39%;">Hide</button>
+        <button id="show" style="margin-left: 6%;">Show</button>
+    </div>
+
+
+
+
+    <div id="dragdiv" style="display: flex;">
+        <div id="div1" style="margin-left: 27%; margin-top: 30px; padding: 0%;" ondrop="drop(event)"
+            ondragover="allowDrop(event)">
+        </div>
+
+        <div id="div1" style="margin-left: 4px; margin-top: 30px; padding: 0%;" ondrop="drop(event)"
+            ondragover="allowDrop(event)">
+            <img id="drag1" src="https://cdn3.vectorstock.com/i/1000x1000/85/37/airplane-icon-black-icon-vector-29058537.jpg" draggable="true" ondragstart="drag(event)" width="357"
+                height="302">
+        </div>
+    </div>
+
+    <script>
+        let string = document.getElementById("permbajtja").innerHTML;
+        let result = string.replace(/WANDERLUST/g, "Wanderlust");
+        document.getElementById("permbajtja").innerHTML = result;
+    </script>
+
+
+    <script src="canvas.js">
+    </script>
+
+  <!-- footer -->
+  <section class="footer">
+
+    <div class="box-container">
+        <div class="logo">
+            <img href="home.html" src="images/logo.png" width="312px" height="192px">
+        </div>
+
+
+
+        <div class="box">
+
+            <h3>about us</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est
+                accusantium voluptas enim nemo facilis sit debitis.</p>
+        </div>
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="home.html">home</a>
+            <a href="book.html">book</a>
+            <a href="packages.html">packages</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+            <a href="aboutus.html">about us</a>
+        </div>
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#">facebook</a>
+            <a href="#">instagram</a>
+            <a href="#">twitter</a>
+            <a href="#">linkedin</a>
+        </div>
+
+    </div>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<!--  js file link  -->
+<script src="js/script.js"></script>
+
+
+</body>
+
+</html>
