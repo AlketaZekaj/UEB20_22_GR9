@@ -66,33 +66,73 @@ function btnMouseEnterEvent() {
     console.warn("We're directing you to the booking page!");
 }
 
+const bookingForm = document.getElementById("bookingForm");
 
-function message(){
-  var Name = document.getElementById('name');
-  var Email = document.getElementById('email');
-  var PhoneNumber=document.getElementById('phoneNumber');
-  var Message = document.getElementById('message');
-  const success = document.getElementById('success');
-  const danger = document.getElementById('danger');
+bookingForm.addEventListener("submit", (e) => {
+    alert("Thank you for choosing us!");
+})
 
-  if(Name.value === '' || Email.value === '' || Message.value === '' || PhoneNumber.value === ''){
-      danger.style.display = 'block';
-  }
-  else {
-  setTimeout(() => {
-      Name.value = '';
-      Email.value = '';
-      Message.value = '';
-      PhoneNumber.value = '';
-  }, 2000);
 
-  success.style.display = 'block';
+function message() {
+    var Name = document.getElementById('name');
+    var Email = document.getElementById('email');
+    var PhoneNumber = document.getElementById('phoneNumber');
+    var Message = document.getElementById('message');
+    const success = document.getElementById('success');
+    const danger = document.getElementById('danger');
+
+    if (Name.value === '' || Email.value === '' || Message.value === '' || PhoneNumber.value === '') {
+        danger.style.display = 'block';
+    }
+    else {
+        setTimeout(() => {
+            Name.value = '';
+            Email.value = '';
+            Message.value = '';
+            PhoneNumber.value = '';
+        }, 2000);
+
+        success.style.display = 'block';
+    }
+
+
+    setTimeout(() => {
+        danger.style.display = 'none';
+        success.style.display = 'none';
+    }, 4000);
+
 }
 
+function validation() {
+    var Name = document.getElementById('firstName');
+    var Surname = document.getElementById('lastName');
+    var Email = document.getElementById('email');
+    var Password = document.getElementById('password');
+    var confirmPassword = document.getElementById('confirmPassword');
+    var checkbox = document.getElementById('checkbox');
+    const success = document.getElementById('success');
+    const danger = document.getElementById('danger');
 
-setTimeout(() => {
-  danger.style.display = 'none';
-  success.style.display = 'none';
-}, 4000);
+    if (Name.value === '' || Surname.value === '' || Email.value === '' || Password.value === '' || confirmPassword.value === '' || checkbox.checked == false) {
+        danger.style.display = 'block';
+    }
+    else {
+        setTimeout(() => {
+            Name.value = '';
+            Surname.value = '';
+            Email.value = '';
+            Password.value = '';
+            confirmPassword.value = '';
+            checkbox.checked = true;
+        }, 1000);
+
+        alert("Your registration has been succesfully completed!");
+    }
+
+
+    setTimeout(() => {
+        danger.style.display = 'none';
+        success.style.display = 'none';
+    }, 4000);
 
 }
