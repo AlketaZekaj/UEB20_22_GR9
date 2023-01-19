@@ -104,7 +104,22 @@
       animation-play-state: running;
       animation-iteration-count: 10;
   }
-  
+  #dl{
+    border-style:double;
+    border-color: #0c0eb3;
+    margin-right: 20px;
+    animation: animacioniBackground 3s;
+    animation-play-state: running;
+    animation-iteration-count: 10;
+}
+
+@keyframes animacioniBackground {
+  0%   {background-image: url(https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg);}
+  25%  {background-image: url(https://thumbs.dreamstime.com/z/great-wall-china-travel-stormy-sky-clouds-dramatic-scene-near-beijing-create-dramatic-scenic-backdrop-36567269.jpg);}
+  50%  {background-image: url(https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg);}
+  75%  {background-image: url(https://thumbs.dreamstime.com/z/great-wall-china-travel-stormy-sky-clouds-dramatic-scene-near-beijing-create-dramatic-scenic-backdrop-36567269.jpg);}
+  100% {background-image: url(https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg);}
+}
 
   
   dt{
