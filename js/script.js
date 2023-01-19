@@ -25,6 +25,43 @@ searchBtn.addEventListener('click', () => {
     searchBar.classList.toggle('active');
 });
 
+//try,catch and throw function for login form
+const form = document.getElementById("loginForm");
+form.addEventListener("submit", handleSubmit);
+
+function handleSubmit(event) {
+    event.preventDefault();
+
+    let email = document.getElementById("email").value;
+    let password = document.getElementById("password").value;
+
+    try {
+        if (!email) {
+            throw new Error("Email is required");
+        }
+        if (!password) {
+            throw new Error("Password is required");
+        }
+        if (!validateEmail(email)) {
+            throw new Error("Invalid email format");
+        }
+        if (password.length < 8) {
+            throw new Error("Password must be at least 8 characters long");
+        }
+        // send login request to server
+        form.submit();
+
+    } catch (err) {
+        alert(err);
+    }
+}
+
+function validateEmail(email) {
+    let re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(email).toLowerCase());
+}
+//end
+
 formBtn.addEventListener('click', () => {
     loginForm.classList.add('active');
 });
