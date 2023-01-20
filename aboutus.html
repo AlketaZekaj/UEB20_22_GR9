@@ -19,6 +19,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="showhide.js"></script>
     <script src="fade.js"></script>
+
+  
 </head>
 
 </head>
@@ -81,10 +83,11 @@
     <!-- login container  -->
 
     <body>
+
         <section>
             <table class="about">
                 <tr>
-                    <td rowspan="3" id="fototd">
+                    <td rowspan="3" id="fotot">
                         <img class="imgtd"
                             src="https://claritybusinesstravel.com/wp-content/uploads/2022/03/hero_banner3.png">
                         <figcaption style="margin-left: 19px; text-align: center;"><b>We are Wanderlust</b></figcaption>
@@ -92,7 +95,7 @@
                     </td>
                     <td class="content">
                         <article>
-                            <p class="paragraph" id="content">Wanderlust is a traveling website that was launched
+                            <p class="paragraph" id="content"><i><b>Wanderlust is a traveling website that was launched
                                 on May 31,
                                 2019 by four students of FIEK in <abbr title="KOSOV&Euml;">KS</abbr>,.
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!
@@ -105,8 +108,8 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, nam!
-                                In <abbr title="KOSOV&Euml;">KS</abbr>,
-                                WANDERLUST is on of the most famous sites </p>
+                                <p1>In <abbr title="KOSOV&Euml;">KS</abbr>,
+                                WANDERLUST is on of the most famous sites</b></i> </p1>
                             <p style="font-weight: bold;">Counted seconds: <output id="result"></output> </p>
                             <div class="wseconds">
                                 <button id="start" style="margin-left: 20%; width: 150px;"
@@ -177,25 +180,32 @@
                         </div>
                     </td>
                 </tr>
+                 
+                    
+                    
 
             </table>
-
+           
             <tr>
                 <td id="data2">
-                    <p><span title="Some word from our clients">People say</span></p>
-                    <a href="https://metro.co.uk/wp-content/uploads/2022/04/Alex-Cooper-3e3f-bbf1.jpg?quality=90&strip=all"
-                        target="_blank">
+                    <p><span title="Some word from our clients"><b>People say</b></span></p>
                         <dl id="dl">
-                            <dt>Johnny</dt>
-                            <dd>~For me it was the first time that i booked vacations online and i am very happy,thanks
-                                to Wanderlust and their amaizing team .</dd>
+                            <dt><i><b>Johnny</b></i></dt>
+                            <dd><b>~For me it was the first time that i booked vacations online and i am very happy,thanks
+                                to Wanderlust and their amaizing team .</b></dd>
                         </dl>
                     </a>
                 </td>
             </tr>
         </section>
+      
+
+       
+    
+
 
         <div id="audiojquery">
+
             <audio controls id="music"
                 style="background-color: hsl(266, 64%, 96%); margin:auto; display: block; margin-top: 20px;">
                 <h4>Je lodhur duke kerkuar ofertat me te mira? Relaksohu me muzike!</h4>
@@ -210,9 +220,12 @@
 
 
         <div id="dragdiv" style="display: flex; flex-direction: row; justify-content: center; margin-bottom: 50px;">
-            <div id="div1" style="padding: 0%;" ondrop="drop(event)" ondragover="allowDrop(event)">
-            </div>
+            
 
+            <div id="div1" style="padding: 0%;" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            <svg height="100" width="100" id="circle">
+                <circle cx="50" cy="50" r="40" fill="#3b6578" />
+            </svg>
             <div id="div1" style="padding: 0%;" ondrop="drop(event)" ondragover="allowDrop(event)">
                 <img id="drag1" src="images/plane.png" draggable="true" ondragstart="drag(event)" width="357"
                     height="302">
@@ -224,10 +237,10 @@
             let result = string.replace(/WANDERLUST/g, "Wanderlust");
             document.getElementById("permbajtja").innerHTML = result;
         </script>
+        
 
 
-        <script src="canvas.js">
-        </script>
+        
 
         <!-- footer -->
         <section class="footer">
