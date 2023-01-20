@@ -48,7 +48,6 @@ function handleSubmit(event) {
         if (password.length < 8) {
             throw new Error("Password must be at least 8 characters long");
         }
-        // send login request to server
         form.submit();
 
     } catch (err) {
@@ -99,17 +98,19 @@ var swiper = new Swiper(".review-slider", {
     },
 });
 
+//packages 
 function btnMouseEnterEvent() {
     console.warn("We're directing you to the booking page!");
 }
 
+//booking
 const bookingForm = document.getElementById("bookingForm");
 
 bookingForm.addEventListener("submit", (e) => {
     alert("Thank you for choosing us!");
 })
 
-
+//contact
 function message() {
     var Name = document.getElementById('name');
     var Email = document.getElementById('email');
@@ -140,6 +141,7 @@ function message() {
 
 }
 
+//register
 function validation() {
     var Name = document.getElementById('firstName');
     var Surname = document.getElementById('lastName');
