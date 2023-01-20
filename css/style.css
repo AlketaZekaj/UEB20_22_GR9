@@ -687,10 +687,11 @@ h2:after {
 .services .box-container .box {
   flex: 1 1 30rem;
   border-radius: .5rem;
-  padding: 1rem;
+  padding: 25px;
   text-align: center;
   cursor: pointer;
   border-radius: 120px;
+  background-color: #F8F8F8;
 }
 
 .services .box-container .box i {
@@ -714,6 +715,27 @@ h2:after {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
 }
 
+.visited {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visited h3 {
+  color: #3b6578;
+  font-size: 30px;
+}
+
+.visited p {
+  color: #3b6578;
+  font-size: 1.5rem;
+}
+
+.visited ul {
+  color: rgb(20, 2, 2);
+  font-size: 1.5rem;
+}
+
 .content-table {
   border-collapse: collapse;
   margin: 25px 0;
@@ -733,6 +755,7 @@ h2:after {
   text-align: left;
   font-weight: bold;
   border-style: groove;
+  font-size: 1.7rem;
 }
 
 .content-table th,
@@ -743,6 +766,7 @@ h2:after {
 .content-table tbody tr {
   border-bottom: 3px solid #dddddd;
   text-align: center;
+  font-size: 1.4rem;
 }
 
 .content-table tbody tr:nth-of-type(even) {
