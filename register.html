@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register now</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+
+    <style>
+        .register .heading span {
+            color: white;
+            background: #3b6578;
+        }
+
+        .register .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            align-items: center;
+        }
+
+        .register .row .image {
+            flex: 1 1 40rem;
+        }
+
+        .register .row .image img {
+            width: fit-content;
+        }
+
+        .register .row form {
+            flex: 1 1 40rem;
+            padding: 2rem;
+            box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
+            border-radius: .5rem;
+        }
+
+        .register .row form .inputBox {
+            padding: .5rem 0;
+        }
+
+        .register .row form .inputBox input {
+            width: 100%;
+            padding: 1rem;
+            border: .1rem solid rgba(0, 0, 0, .1);
+            font-size: 1.7rem;
+            color: #333;
+            text-transform: none;
+        }
+
+        .register .row form .inputBox h3 {
+            font-size: 2rem;
+            padding: 1rem 0;
+            color: #666;
+        }
+
+        .register .row form .btn {
+            display: block;
+            width: 100%;
+        }
+
+        .register .row form .btn:hover {
+            background: #3b6578;
+            color: #1A1A1A;
+        }
+
+        .signup {
+            font-size: 35px;
+            display: flex;
+            justify-content: center;
+            color: #3b6578;
+        }
+
+        .check {
+            font-size: 12px;
+            margin: 15px;
+        }
+    </style>
+</head>
+
+<body class="bg-light">
+
+    <!--  header  -->
+    <header>
+        <div class="logo">
+            <img href="home.html" src="images/logo.png" width="150px" height="77px">
+        </div>
+
+
+        <a href="#" class="logo"><span>Wander</span>lust</a>
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="book.html">book</a>
+            <a href="packages.html">packages</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+            <a href="aboutus.html">about us</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Kerko ketu ...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+    </header>
+    <!--  header  -->
+
+    <!-- login container  -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form id="loginForm" action="">
+            <h3>login</h3>
+            <input id="email" type="email" class="box" placeholder="Enter your email">
+            <input id="password" type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forget password? <a href="#">Click here</a></p>
+            <p>Don't have and account? <a href="register.html">Register now</a></p>
+        </form>
+
+    </div>
+    <!-- login container  -->
+
+    <section class="register" id="register" style="padding: 120px;">
+
+        <h1 class="heading">
+            <span>r</span>
+            <span>e</span>
+            <span>g</span>
+            <span>i</span>
+            <span>s</span>
+            <span>t</span>
+            <span>e</span>
+            <span>r</span>
+            &nbsp;
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+
+        <div class="row">
+
+            <div class="image">
+                <img src="images/contact-img.svg" alt="">
+            </div>
+
+            <form action="">
+                <h3 class="signup">Sign Up</h3>
+                <div class="inputBox">
+                    <input id="firstName" type="text" placeholder="First Name">
+                </div>
+                <div class="inputBox">
+                    <input id="lastName" type="text" placeholder="Last Name">
+                </div>
+                <div class="inputBox">
+                    <input id="email" type="text" placeholder="Email" autocomplete="off">
+                </div>
+                <div class="inputBox">
+                    <input id="password" type="password" placeholder="Password">
+                </div>
+                <div class="inputBox">
+                    <input id="confirmPassword" type="Password" placeholder="Confirm Password">
+                </div>
+                <div class="check">
+                    <input id="checkbox" type="checkbox" style="margin: 0 8px 0 0;" autocomplete="on" required> You
+                    agree to our <a href="#" style="color: rgb(235, 164, 32);"><b>Terms and Privacy
+                            Policy</b></a>
+                </div>
+                <div class="message">
+                    <div class="success" id="success">Your registration has been succesfully completed!</div>
+                    <div class="danger" id="danger">Fields Can't be Empty!</div>
+                </div>
+                <input type="submit" class="btn" value="Sign Up" onclick="validation()">
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- footer -->
+    <section class="footer">
+
+        <div class="box-container">
+            <div class="logo">
+                <img href="home.html" src="images/logo.png" width="312px" height="192px">
+            </div>
+
+
+
+            <div class="box">
+
+                <h3>about us</h3>
+                <address>
+                    Adresa: Bregu i Diellit, Prishtinë, Republika e Kosovës
+                </address>
+                <p>Contact us at:<a href="mailto:lustw8022@gmail.com"><i>lustw8022@gmail.com</i></a> </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est
+                    accusantium voluptas enim nemo facilis sit debitis.</p>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html">home</a>
+                <a href="book.html">book</a>
+                <a href="packages.html">packages</a>
+                <a href="services.html">services</a>
+                <a href="contact.html">contact</a>
+                <a href="aboutus.html">about us</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+
+
+        </div>
+        <h1 class="credit"> created by <span> Grupi 9 </span> | all rights reserved! </h1>
+    </section>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
