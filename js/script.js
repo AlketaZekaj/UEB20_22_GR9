@@ -101,7 +101,43 @@ document.getElementById("destinacioni4").innerHTML = udhetimi5.destination;
 document.getElementById("data-fillimit4").innerHTML = udhetimi5.startDate;
 document.getElementById("data-mbarimit4").innerHTML = udhetimi5.endDate;
 
-//end
+
+// Datë e dëshiruar e përdoruesit
+var dataDeshiruar = new Date("01/01/2023");
+
+// Kontrollimi i disponueshmërisë së udhëtimit
+if (dataDeshiruar >= new Date(udhetimi1.startDate) && dataDeshiruar <= new Date(udhetimi1.endDate)) {
+    console.log("Udhëtimi në Paris është i disponueshëm në datën e dëshiruar të përdoruesit.");
+} else {
+    console.log("Udhëtimi në Paris nuk është i disponueshëm në datën e dëshiruar të përdoruesit.");
+}
+
+//
+
+// Define an array of travel objects
+var udhetimet = [
+    { destination: "Paris", startDate: "01/01/2023", endDate: "01/05/2023", price: 1000 },
+    { destination: "Rome", startDate: "06/02/2023", endDate: "06/05/2023", price: 1200 },
+    { destination: "Barcelona", startDate: "03/23/2023", endDate: "03/27/2023", price: 1100 }
+];
+
+function disponueshmeriaUdhetimit(udhetimi, callback) {
+    var dataDeshiruar = new Date("01/01/2023");
+    return callback(udhetimi, dataDeshiruar);
+}
+
+// Use the filter method to filter the available travels
+var udhetimetDisponueshme = udhetimet.filter(udhetim => {
+    return disponueshmeriaUdhetimit(udhetim, (udhetim, data) => {
+        var start = new Date(udhetim.startDate);
+        var end = new Date(udhetim.endDate);
+        return data >= start && data <= end;
+    });
+});
+
+console.log(udhetimetDisponueshme);
+
+//
 
 formBtn.addEventListener('click', () => {
     loginForm.classList.add('active');
@@ -144,13 +180,6 @@ var swiper = new Swiper(".review-slider", {
 function btnMouseEnterEvent() {
     console.warn("We're directing you to the booking page!");
 }
-
-//booking
-const bookingForm = document.getElementById("bookingForm");
-
-bookingForm.addEventListener("submit", (e) => {
-    alert("Thank you for choosing us!");
-})
 
 //contact
 function message() {
