@@ -1,0 +1,196 @@
+ * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  body {
+      background-color: hsl(266, 64%, 96%);
+      padding-top: 100px;
+  }
+  
+  h1 {
+      margin-bottom: 8px;
+  }
+  .content p {
+      margin-bottom: 45px;
+  }
+  
+  h1 {
+      color: #100020;
+      font-size: 45px;
+  }
+  .aboutus .heading span {
+    color: white;
+    background: #3b6578;
+}
+
+  
+  button {
+      background: #3b6578;
+      width: 100px;
+      border: none;
+      outline: none;
+      color : #fff;
+      height: 35px;
+      border-radius: 30px;
+      margin-top: 20px;
+      box-shadow: 0px 5px 15px 0px rgba(14, 2, 66, 0.3);
+      text-align: center;
+      margin-left: 40%;
+  }
+  
+  button:hover {
+      color : #100020;
+  }
+
+  .nav_linqet {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav_linqet a {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  
+  
+  @keyframes bottomboder {
+    0%   {border-bottom:2px solid black;}
+    25%  {border-bottom:2px solid #3b6578;}
+    100% {border-bottom:2px solid black;}
+    
+  }
+  
+  
+  .content{
+      padding-top: 40px;
+      padding-bottom: 40px;
+      margin-left: 10px;
+      padding-left: 50px;
+      width: 50%;
+      margin-right: auto;
+      line-height: 30pt;
+  
+  }
+  p {
+      font-family: "freight-text-pro",serif;
+  }
+  abbr{
+      text-decoration: underline;
+  }
+  mark{
+      background-color: #4d82e4;
+  }
+
+  #servicesList{
+      margin-left: 45px;
+  }
+  ul{
+      margin-left: 22px;
+      list-style-type: square;
+  }
+  dl dd{
+      margin-left: 30px;
+      font-style: italic;
+  }
+  #dl{
+      border-style:double;
+      border-color: #4d82e4;
+      margin-right: 20px;
+      animation: animacioniBackground 3s;
+      animation-play-state: running;
+      animation-iteration-count: 10;
+  }
+  #dl{
+    border-style:double;
+    border-color: #0c0eb3;
+    margin-right: 20px;
+    animation: animacioniBackground 3s;
+    animation-play-state: running;
+    animation-iteration-count: 10;
+}
+
+@keyframes animacioniBackground {
+  0%   {background-image: url(https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg);}
+  25%  {background-image: url(https://thumbs.dreamstime.com/z/great-wall-china-travel-stormy-sky-clouds-dramatic-scene-near-beijing-create-dramatic-scenic-backdrop-36567269.jpg);}
+  50%  {background-image: url(https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg);}
+  75%  {background-image: url(https://thumbs.dreamstime.com/z/great-wall-china-travel-stormy-sky-clouds-dramatic-scene-near-beijing-create-dramatic-scenic-backdrop-36567269.jpg);}
+  100% {background-image: url(https://thumbs.dreamstime.com/b/time-to-travel-wooden-sign-beach-background-49509295.jpg);}
+}
+
+  
+  dt{
+      font-weight: 640;
+  }
+  p span{
+      background-color: #4d82e4;
+      font-size: 20px;
+      outline-style: solid;
+      outline-color: #100020;
+      outline-width: 1px;
+      outline-offset: 0px;
+      background-image:linear-gradient(#3b6578);
+  }
+  
+  .about{
+    display: flex;
+    width: 110%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+  
+  .imgtd{
+    width: auto;
+    height: 650px;
+    margin-left: 20px;
+  }
+  
+  #fototd{
+    width: 20%;
+  }
+  
+  td{
+    padding-right: 50px;
+    padding-left: 0px;
+  }
+  
+  #data2{
+    padding-left: 50px;
+    margin-left: 10px;
+    line-height: 25pt;
+    margin-bottom: 50px;
+  }
+  
+  #data1{
+    padding-left: 50px;
+    margin-left: 10px;
+    padding-bottom: 20px;
+    line-height: 25pt;
+    
+  }
+  
+  table{
+    border: blanchedalmond;
+    border-style:ridge;
+    border-color:blanchedalmond ;
+  }
+  
+  
+  #div1 {
+    width : 360px;
+    height : 305px;
+    padding: 10px;
+    border: 1px solid #aaaaaa;
+  }
+  #audiojquery{
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
+  
+  .wseconds {
+    display: flex;
+
+  }
