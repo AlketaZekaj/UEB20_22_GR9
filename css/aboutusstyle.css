@@ -50,7 +50,7 @@
   
   .nav_linqet a {
     font-family: "Montserrat", sans-serif;
-    font-size: 18px;
+    font-size: 25px;
     color: #edf0f1;
     text-decoration: none;
   }
@@ -127,7 +127,7 @@
   }
   p span{
       background-color: #4d82e4;
-      font-size: 20px;
+      font-size: 30px;
       outline-style: solid;
       outline-color: #100020;
       outline-width: 1px;
