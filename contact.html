@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- custom css file   -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+    <!--  header  -->
+    <header>
+        <div class="logo">
+            <img href="home.html" src="images/logo.png" width="150px" height="77px">
+        </div>
+
+
+        <a href="home.html" class="logo"><span>Wander</span>lust</a>
+
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="book.html">book</a>
+            <a href="packages.html">packages</a>
+            <a href="services.html">services</a>
+            <a href="contact.html">contact</a>
+            <a href="aboutus.html">about us</a>
+        </nav>
+
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Kerko ketu ...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+
+    </header>
+    <!--  header  -->
+
+    <!-- login container  -->
+
+    <div class="login-form-container">
+
+        <i class="fas fa-times" id="form-close"></i>
+
+        <form id="loginForm" action="">
+            <h3>login</h3>
+            <input id="email" type="email" class="box" placeholder="Enter your email">
+            <input id="password" type="password" class="box" placeholder="Enter your password">
+            <input type="submit" value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forget password? <a href="#">Click here</a></p>
+            <p>Don't have and account? <a href="register.html">Register now</a></p>
+        </form>
+
+    </div>
+
+    <!-- contact us  -->
+
+    <div class="container">
+        <div class="contact-box">
+            <div class="left"></div>
+            <div class="right">
+                <h2>Contact Us</h2>
+
+                <input type="text" class="field" id="name" placeholder="Name">
+                <input type="email" class="field" id="email" placeholder="Email">
+                <input type="text" class="field" id="phoneNumber" placeholder="Phone Number"
+                    pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
+                <textarea class="field area" id="message" placeholder="Message"></textarea>
+
+                <div class="button">
+                    <button id="Submit" onclick="message()">Submit</button>
+                </div>
+                <div class="message">
+                    <div class="success" id="success">Your Message Successfully Sent!</div>
+                    <div class="danger" id="danger">Fields Can't be Empty!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+
+    <!-- footer -->
+    <section class="footer">
+
+        <div class="box-container">
+            <div class="logo">
+                <img href="home.html" src="images/logo.png" width="312px" height="192px">
+            </div>
+
+
+
+            <div class="box">
+
+                <h3>about us</h3>
+                <address>
+                    Adresa: Bregu i Diellit, Prishtinë, Republika e Kosovës
+                </address>
+                <p>Contact us at:<a href="mailto:lustw8022@gmail.com"><i>lustw8022@gmail.com</i></a> </p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quas magni pariatur est
+                    accusantium voluptas enim nemo facilis sit debitis.</p>
+            </div>
+
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="home.html">home</a>
+                <a href="book.html">book</a>
+                <a href="packages.html">packages</a>
+                <a href="services.html">services</a>
+                <a href="contact.html">contact</a>
+                <a href="aboutus.html">about us</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">instagram</a>
+                <a href="#">twitter</a>
+                <a href="#">linkedin</a>
+            </div>
+
+
+        </div>
+        <h1 class="credit"> created by <span> Grupi 9 </span> | all rights reserved! </h1>
+    </section>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--  js file link  -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
