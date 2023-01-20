@@ -25,6 +25,23 @@ searchBtn.addEventListener('click', () => {
     searchBar.classList.toggle('active');
 });
 
+formBtn.addEventListener('click', () => {
+    loginForm.classList.add('active');
+});
+
+formClose.addEventListener('click', () => {
+    loginForm.classList.remove('active');
+});
+
+videoBtn.forEach(btn => {
+    btn.addEventListener('click', () => {
+        document.querySelector('.controls .active').classList.remove('active');
+        btn.classList.add('active');
+        let src = btn.getAttribute('data-src');
+        document.querySelector('#video-slider').src = src;
+    });
+});
+
 //try,catch and throw function for login form
 const form = document.getElementById("loginForm");
 form.addEventListener("submit", handleSubmit);
@@ -138,23 +155,6 @@ var udhetimetDisponueshme = udhetimet.filter(udhetim => {
 console.log(udhetimetDisponueshme);
 
 //
-
-formBtn.addEventListener('click', () => {
-    loginForm.classList.add('active');
-});
-
-formClose.addEventListener('click', () => {
-    loginForm.classList.remove('active');
-});
-
-videoBtn.forEach(btn => {
-    btn.addEventListener('click', () => {
-        document.querySelector('.controls .active').classList.remove('active');
-        btn.classList.add('active');
-        let src = btn.getAttribute('data-src');
-        document.querySelector('#video-slider').src = src;
-    });
-});
 
 var swiper = new Swiper(".review-slider", {
     spaceBetween: 20,
