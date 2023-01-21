@@ -77,27 +77,32 @@
     <div class="container">
         <div class="contact-box">
             <div class="left"></div>
-            <div class="right">
-                <h2>Contact Us</h2>
-
-                <input type="text" class="field" id="name" placeholder="Name">
-                <input type="email" class="field" id="email" placeholder="Email">
-                <input type="text" class="field" id="phoneNumber" placeholder="Phone Number"
+                <div class="right">
+                    <h2>Contact Us</h2>
+                   
+                    <input type="text" class="field" id="name" placeholder="Name">
+                    <input type="email" class="field" id="email" placeholder="Email">
+                    <input type="text" class="field" id="phoneNumber" placeholder="Phone Number"
                     pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}">
-                <textarea class="field area" id="message" placeholder="Message"></textarea>
-
-                <div class="button">
-                    <button id="Submit" onclick="message()">Submit</button>
+                    <textarea class="field area" id="message" placeholder="Message"></textarea>
+                    
+                    <div class="button">
+                        <button id="Submit" onclick="message()">Submit</button>
+                    </div>
+                    <div class="message">
+                        <div class="success" id="success">Your Message Successfully Sent!</div>
+                        <div class="danger" id="danger">Fields Can't be Empty!</div>
+                    </div>
+                    
                 </div>
-                <div class="message">
-                    <div class="success" id="success">Your Message Successfully Sent!</div>
-                    <div class="danger" id="danger">Fields Can't be Empty!</div>
-                </div>
-            </div>
         </div>
+    </form>
     </div>
 
-    <script src="main.js"></script>
+    <script src="js/contact.js"></script>
+
+
+    
 
     <!-- footer -->
     <section class="footer">

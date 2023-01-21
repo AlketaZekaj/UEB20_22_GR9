@@ -41,6 +41,27 @@ videoBtn.forEach(btn => {
         document.querySelector('#video-slider').src = src;
     });
 });
+var swiper = new Swiper(".review-slider", {
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        640: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        1024: {
+            slidesPerView: 3,
+        },
+    },
+});
+
+
 
 //try,catch and throw function for login form
 const form = document.getElementById("loginForm");
@@ -154,63 +175,13 @@ var udhetimetDisponueshme = udhetimet.filter(udhetim => {
 
 console.log(udhetimetDisponueshme);
 
-//
-
-var swiper = new Swiper(".review-slider", {
-    spaceBetween: 20,
-    loop: true,
-    autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-    },
-    breakpoints: {
-        640: {
-            slidesPerView: 1,
-        },
-        768: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        },
-    },
-});
 
 //packages 
 function btnMouseEnterEvent() {
     console.warn("We're directing you to the booking page!");
 }
 
-//contact
-function message() {
-    var Name = document.getElementById('name');
-    var Email = document.getElementById('email');
-    var PhoneNumber = document.getElementById('phoneNumber');
-    var Message = document.getElementById('message');
-    const success = document.getElementById('success');
-    const danger = document.getElementById('danger');
 
-    if (Name.value === '' || Email.value === '' || Message.value === '' || PhoneNumber.value === '') {
-        danger.style.display = 'block';
-    }
-    else {
-        setTimeout(() => {
-            Name.value = '';
-            Email.value = '';
-            Message.value = '';
-            PhoneNumber.value = '';
-        }, 2000);
-
-        success.style.display = 'block';
-    }
-
-
-    setTimeout(() => {
-        danger.style.display = 'none';
-        success.style.display = 'none';
-    }, 4000);
-
-}
 
 //register
 function validation() {

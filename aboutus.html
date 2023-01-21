@@ -15,10 +15,10 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/aboutusstyle.css">
     <script src="https://use.fontawesome.com/0c9865e994.js"></script>
-    <script src="drag.drop.js"></script>
+    <script src="js/drag.drop.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="showhide.js"></script>
-    <script src="fade.js"></script>
+    <script src="js/showhide.js"></script>
+    <script src="js/fade.js"></script>
 
   
 </head>
@@ -124,7 +124,7 @@
                                 function countSeconds() {
                                     if (typeof (Worker) !== "undefined") {
                                         if (typeof (s) == "undefined") {
-                                            s = new Worker("seconds.js");
+                                            s = new Worker("js/seconds.js");
                                         }
                                         s.onmessage = function (event) {
                                             document.getElementById("result").innerHTML = event.data;
@@ -209,7 +209,7 @@
             <audio controls id="music"
                 style="background-color: hsl(266, 64%, 96%); margin:auto; display: block; margin-top: 20px;">
                 <h4>Je lodhur duke kerkuar ofertat me te mira? Relaksohu me muzike!</h4>
-                <source src="media/MC Kresha - Era.mp3.mp3" type="audio/mpeg">
+                <source src="media.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio>
             <button id="hide" style="margin-left: 39%;">Hide</button>
