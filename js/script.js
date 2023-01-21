@@ -61,6 +61,36 @@ var swiper = new Swiper(".review-slider", {
     },
 });
 
+//contact
+function message() {
+    var Name = document.getElementById('name');
+    var Email = document.getElementById('email');
+    var PhoneNumber = document.getElementById('phoneNumber');
+    var Message = document.getElementById('message');
+    const success = document.getElementById('success');
+    const danger = document.getElementById('danger');
+
+    if (Name.value === '' || Email.value === '' || PhoneNumber.value === '' || Message.value === '' ) {
+        danger.style.display = 'block';
+    }
+    else {
+        setTimeout(() => {
+            Name.value = '';
+            Email.value = '';
+            PhoneNumber.value = '';
+            Message.value = '';
+        }, 2000);
+
+        success.style.display = 'block';
+    }
+
+
+    setTimeout(() => {
+        danger.style.display = 'none';
+        success.style.display = 'none';
+    }, 4000);
+
+}
 
 
 //try,catch and throw function for login form

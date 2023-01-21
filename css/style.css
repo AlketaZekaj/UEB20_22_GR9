@@ -443,12 +443,13 @@ h2:after {
 }
 
 .field {
-  width: 100%;
+  width: 85%;
   padding: 0.5rem 1rem;
   outline: none;
   border: 2px solid rgba(0, 0, 0, 0);
   background-color: rgba(230, 230, 230, 0.6);
   font-size: 1.7rem;
+  text-transform: none;
   margin-bottom: 22px;
   transition: .3s;
 }
@@ -473,7 +474,7 @@ h2:after {
 }
 
 .button button {
-  width: 100%;
+  width: 85%;
   padding: 10px;
   font-size: 1.7rem;
   color: #fff;
