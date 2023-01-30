@@ -141,11 +141,14 @@
  }
 
 
- .about {
-   display: flex;
-   height: auto;
-   margin-bottom: 50px;
- }
+.about{
+display: flex;
+width: 110%;
+height: auto;
+margin-bottom: 50px;
+border:dashed;
+border-color: #4b6578;
+}
 
  .imgtd {
    width: auto;
