@@ -159,7 +159,7 @@
                 <img src="images/contact-img.svg" alt="">
             </div>
 
-            <form action="">
+            <form id="registerForm" action="">
                 <h3 class="signup">Sign Up</h3>
                 <div class="inputBox">
                     <input id="firstName" type="text" placeholder="First Name">
@@ -168,24 +168,23 @@
                     <input id="lastName" type="text" placeholder="Last Name">
                 </div>
                 <div class="inputBox">
-                    <input id="email" type="text" placeholder="Email" autocomplete="off">
+                    <input id="emailR" type="text" placeholder="Email" autocomplete="off">
                 </div>
                 <div class="inputBox">
-                    <input id="password" type="password" placeholder="Password">
+                    <input id="passwordR" type="password" placeholder="Password">
                 </div>
                 <div class="inputBox">
                     <input id="confirmPassword" type="Password" placeholder="Confirm Password">
                 </div>
                 <div class="check">
-                    <input id="checkbox" type="checkbox" style="margin: 0 8px 0 0;" autocomplete="on" required> You
+                    <input id="checkbox" type="checkbox" style="margin: 0 8px 0 0;" autocomplete="on"> You
                     agree to our <a href="#" style="color: rgb(235, 164, 32);"><b>Terms and Privacy
                             Policy</b></a>
                 </div>
                 <div class="message">
-                    <div class="success" id="success">Your registration has been succesfully completed!</div>
                     <div class="danger" id="danger">Fields Can't be Empty!</div>
                 </div>
-                <input type="submit" class="btn" value="Sign Up" onclick="validation()">
+                <input type="submit" class="btn" value="Sign Up">
             </form>
 
         </div>
@@ -235,9 +234,8 @@
         <h1 class="credit"> created by <span> Grupi 9 </span> | all rights reserved! </h1>
     </section>
 
-
     <script src="js/script.js"></script>
-
+    <script src="js/register.js"></script>
 </body>
 
 </html>
