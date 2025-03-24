@@ -1,4 +1,4 @@
-name: Release Static Website
+kname: Release Static Website
 
 on:
   push:
@@ -13,6 +13,12 @@ jobs:
       - name: Check out the repository
         uses: actions/checkout@v4
 
+      - name: Set up QEMU (for multi-platform support)
+        uses: docker/setup-qemu-action@v3
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
@@ -25,6 +31,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: alketaz/ueb20_22_gr9:latest
+          tags: alketaZekaj/ueb20_22_gr9:latest
           platforms: linux/amd64,linux/arm64  
-
